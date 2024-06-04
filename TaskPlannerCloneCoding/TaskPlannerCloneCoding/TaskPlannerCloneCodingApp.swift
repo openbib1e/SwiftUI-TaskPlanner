@@ -11,7 +11,8 @@ import SwiftUI
 struct TaskPlannerCloneCodingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskView()
         }
+        .modelContainer(for: Task.self)
     }
 }

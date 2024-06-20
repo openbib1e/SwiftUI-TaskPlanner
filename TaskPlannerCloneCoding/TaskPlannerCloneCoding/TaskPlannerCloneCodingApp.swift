@@ -13,6 +13,6 @@ struct TaskPlannerCloneCodingApp: App {
         WindowGroup {
             TaskView()
         }
-        .modelContainer(for: Task.self)
+        .modelContainer(for: Task.self) // Model 타입을 설정해서 데이터를 저장
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-@Model
+@Model // SwiftData에서 관리하는 대상이 되어 앱의 데이터 모델을 정의
 class Task: Identifiable {
     var id: UUID
     var title: String

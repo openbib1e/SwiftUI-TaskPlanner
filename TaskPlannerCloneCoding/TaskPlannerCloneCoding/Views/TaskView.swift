@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct TaskView: View {
+    @StateObject var viewModel = TaskViewModel()
     @State private var createNewTask: Bool = false
     @State var currentDate: Date = .init()
     
@@ -23,6 +24,7 @@ struct TaskView: View {
                     .padding(.top, 10)
                 
                 // WeekHeaderView
+                WeekHeaderView(viewModel: viewModel)
                 
                 // TaskListView
                 
